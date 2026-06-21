@@ -1,7 +1,7 @@
 # Avaliação Prática — Teste Técnico Dev Jr Mobile 
 
 ## ⋆.˚✮🎧✮˚.⋆ Meu Portifólio 
-# Bem-vindo ao repositório do meu aplicativo de portfólio mobile! Este projeto foi desenvolvido como parte de uma avaliação prática para um teste técnico de Desenvolvedora Júnior Mobile, com o objetivo de demonstrar minhas habilidades na construção de interfaces modernas, interativas e bem estruturadas para dispositivos móveis.
+### Bem-vindo ao repositório do meu aplicativo de portfólio mobile! Este projeto foi desenvolvido como parte de uma avaliação prática para um teste técnico de Desenvolvedora Júnior Mobile, com o objetivo de demonstrar minhas habilidades na construção de interfaces modernas, interativas e bem estruturadas para dispositivos móveis.
 
 ###  ๋ ࣭ ⭑๋ ࣭ ⭑ Criando um app pelo React Native com Expo
 * Utilizei o **Expo** como ambiente de desenvolvimento, garantindo alta produtividade e facilidade no teste em tempo real através do Expo Go.

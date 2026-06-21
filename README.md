@@ -1,6 +1,6 @@
 # Avaliação Prática — Teste Técnico Dev Jr Mobile 
 
-## Meu Portifólio  ִֶָ⋆.˚✮🎧✮˚.⋆
+## ⋆.˚✮🎧✮˚.⋆ Meu Portifólio 
 # Bem-vindo ao repositório do meu aplicativo de portfólio mobile! Este projeto foi desenvolvido como parte de uma avaliação prática para um teste técnico de Desenvolvedora Júnior Mobile, com o objetivo de demonstrar minhas habilidades na construção de interfaces modernas, interativas e bem estruturadas para dispositivos móveis.
 
 ###  ๋ ࣭ ⭑๋ ࣭ ⭑ Criando um app pelo React Native com Expo
@@ -26,5 +26,3 @@
 ###  ๋ ࣭ ⭑๋ ࣭ ⭑ Navegação por Abas Inferiores
 * Configurei uma navegação baseada em abas inferiores (Bottom Tab Navigation) para garantir que o usuário transite facilmente entre as telas de **Perfil**, **Habilidades** e **Projetos**.
 * Personalizei a barra inferior com ícones e cores que combinam com a identidade visual moderna e minimalista do aplicativo.
-
-###  ๋ ࣭ ⭑๋ ࣭ ⭑

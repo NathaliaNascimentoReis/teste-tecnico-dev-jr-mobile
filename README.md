@@ -1,179 +1,30 @@
-# Perfil Dev Jr — Teste Técnico Dev Jr Mobile
+# Avaliação Prática — Teste Técnico Dev Jr Mobile 
 
----
+## Meu Portifólio  ִֶָ⋆.˚✮🎧✮˚.⋆
+# Bem-vindo ao repositório do meu aplicativo de portfólio mobile! Este projeto foi desenvolvido como parte de uma avaliação prática para um teste técnico de Desenvolvedora Júnior Mobile, com o objetivo de demonstrar minhas habilidades na construção de interfaces modernas, interativas e bem estruturadas para dispositivos móveis.
 
-**ATENÇÃO:**
+###  ๋ ࣭ ⭑๋ ࣭ ⭑ Criando um app pelo React Native com Expo
+* Utilizei o **Expo** como ambiente de desenvolvimento, garantindo alta produtividade e facilidade no teste em tempo real através do Expo Go.
+* Organizei os componentes de forma modular e limpa, adaptando a interface para o formato mobile com total responsividade, conforme o layout planejado.
 
-Antes de iniciar o teste, faça um **fork** deste repositório para a sua conta do GitHub. Realize todo o desenvolvimento no seu repositório forkado. Ao finalizar, envie o **link do seu repositório** (com as alterações realizadas) como entrega.
+###  ๋ ࣭ ⭑๋ ࣭ ⭑ Utilizando estados (useState)
+* Apliquei o hook **useState** do React para controlar e gerenciar o estado dos dados da aplicação de forma dinâmica.
+* O estado foi essencial para capturar as interações no formulário de contato, alternar a exibição de conteúdos interativos e renderizar as informações na tela assim que atualizadas.
 
----
+###  ๋ ࣭ ⭑๋ ࣭ ⭑ Campos de Entrada (TextInput) e Verificações (Alert)
+* Implementei o componente **TextInput** na aba de Projetos para que os usuários possam digitar seu e-mail e propostas/mensagens de forma confortável.
+* Adicionei validações em JavaScript associadas ao componente **Alert** do React Native, exibindo avisos personalizados caso o usuário tente enviar campos vazios ou dados inválidos.
 
-## Sobre o desafio
+###   ๋ ࣭ ⭑๋ ࣭ ⭑ Manipulação de listas com FLATLIST
+* Utilizei o **FlatList** para renderizar de forma otimizada a listagem das minhas habilidades e as tecnologias que domino.
 
-A empresa fictícia **DevStart Mobile** está contratando um(a) **Desenvolvedor(a) Mobile Júnior**. O objetivo é criar um aplicativo mobile simples, organizado e funcional usando **React Native com Expo**.
+###  ๋ ࣭ ⭑๋ ࣭ ⭑ Uso de Images, ícones e TouchableOpacity
+* Usei o componente **Image** para carregar de forma fluida a minha foto de perfil profissional.
+* Foram utilizados os ícones visuais da Ionicons, enriquecendo a experiência estética do app.
+* Apliquei **TouchableOpacity** para criar botões e elementos clicáveis com feedback visual suave e natural na navegação e no envio do formulário.
 
-Além da interface, serão avaliados:
-- Criação do projeto com Expo
-- Uso de componentes básicos do React Native
-- Navegação por abas inferiores (TabBar)
-- Organização de telas em arquivos separados
-- Estilização com `StyleSheet`
-- Uso de imagens, listas, campos de entrada e botões
-- Versionamento no GitHub
-- README completo e explicativo
+###  ๋ ࣭ ⭑๋ ࣭ ⭑ Navegação por Abas Inferiores
+* Configurei uma navegação baseada em abas inferiores (Bottom Tab Navigation) para garantir que o usuário transite facilmente entre as telas de **Perfil**, **Habilidades** e **Projetos**.
+* Personalizei a barra inferior com ícones e cores que combinam com a identidade visual moderna e minimalista do aplicativo.
 
----
-
-## Requisitos do aplicativo
-
-- Navegação inferior por abas (**TabBar/Bottom Tabs**) com pelo menos 3 telas:
-  - **Perfil:** Nome, imagem, cargo e seção "Sobre mim"
-  - **Habilidades:** Lista com pelo menos 5 habilidades
-  - **Projetos/Contato:** Pelo menos 2 projetos, área de contato (e-mail, GitHub, LinkedIn/portfólio, campo de mensagem e botão "Enviar contato")
-- Utilizar: `View`, `Text`, `Image`, `ScrollView` ou `FlatList`, `TextInput`, `Button`, `StyleSheet`
-- Organização em pastas (ex: `screens/`, `assets/`)
-- Código indentado e layout organizado
-- Projeto funcionando no Expo Go, navegador ou emulador
-- Não usar bibliotecas visuais prontas (ex: NativeBase, Paper, Tamagui, UI Kitten)
-
----
-
-## Estrutura sugerida
-
-```
-perfil-dev-jr/
-│
-├── App.js
-├── screens/
-│   ├── PerfilScreen.js
-│   ├── HabilidadesScreen.js
-│   └── ProjetosScreen.js
-├── assets/
-│   └── imagem-perfil.png
-└── README.md
-```
-
----
-
-## Como executar o projeto
-
-1. Clone o repositório:
-   ```bash
-   git clone link-do-repositorio
-   ```
-2. Acesse a pasta:
-   ```bash
-   cd perfil-dev-jr
-   ```
-3. Instale as dependências:
-   ```bash
-   npm install
-   ```
-4. Execute o projeto:
-   ```bash
-   npx expo start
-   ```
-
----
-
-## O que deve conter no README
-
-- Descrição do projeto
-- Tecnologias utilizadas
-- Funcionalidades implementadas
-- Explicação detalhada de tudo o que foi feito: telas, funcionalidades, decisões tomadas, organização do código, diferenciais
-- Como executar o projeto
-- Autor
-
-Exemplo de tópicos:
-
-```markdown
-# Perfil Dev Jr
-
-## Descrição
-Aplicativo criado em React Native com Expo para apresentar um perfil profissional de candidato a Desenvolvedor Mobile Júnior.
-
-## Tecnologias utilizadas
-- React Native
-- Expo
-- JavaScript
-- React Navigation
-- Git
-- GitHub
-
-## Funcionalidades
-- Exibe dados do candidato
-- Apresenta uma tela de perfil
-- Lista habilidades
-- Mostra projetos
-- Exibe informações de contato
-- Possui navegação por abas inferiores
-
-## Telas
-- **Perfil:** ...
-- **Habilidades:** ...
-- **Projetos/Contato:** ...
-
-## Organização do código
-- ...
-
-## Diferenciais
-- ...
-
-## Como executar o projeto
-1. ...
-
-## Autor
-Nome do aluno
-```
-
----
-
-## Regras de entrega
-
-1. Faça um **fork** deste repositório para a sua conta do GitHub.
-2. Realize todo o desenvolvimento no seu repositório forkado.
-3. Ao finalizar, envie as seguintes informações:
-
-```
-Nome:
-Turma:
-Link do seu repositório forkado no GitHub:
-```
-
-O link deve apontar para o seu repositório público com o código desenvolvido.
-
----
-
-## Recomendações
-
-- Use apenas estilos criados por você com `StyleSheet`
-- Organize a aplicação em telas separadas
-- Use nomes claros para arquivos, variáveis e estilos
-- Teste a navegação entre as abas
-- Teste o aplicativo antes de entregar
-- Não copie código sem entender
-- Faça commits durante o desenvolvimento
-- Capriche na aparência da tela
-- Cuide da experiência do usuário
-- Pense como se estivesse entregando um teste para uma vaga de Dev Jr
-
----
-
-## Critérios de avaliação
-
-- Projeto criado corretamente com Expo
-- Navegação com TabBar / Bottom Tabs
-- Pelo menos 3 telas diferentes
-- Organização visual e layout
-- Uso correto dos componentes básicos
-- Uso correto do `StyleSheet`
-- GitHub, commits e README
-- Explicação clara do projeto
-- Postura profissional
-
----
-
-## Observação importante
-
-Esta avaliação simula um teste técnico para uma vaga de **Desenvolvedor Mobile Júnior**. Além do aplicativo funcionar, serão avaliados organização, clareza do código, capricho visual, uso correto do GitHub, capacidade de explicar o projeto e postura durante a entrevista técnica.
+###  ๋ ࣭ ⭑๋ ࣭ ⭑

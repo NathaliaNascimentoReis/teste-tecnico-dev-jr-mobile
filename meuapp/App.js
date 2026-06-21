@@ -29,7 +29,7 @@ function TabNavigator() {
                 tabBarItemStyle: {
                     flexDirection: 'column',
                     alignSelf: 'center',
-                    height: '100%',
+                    height: 80,
                 },
                 tabBarActiveBackgroundColor: '#386d68',
                 tabBarInactiveBackgroundColor: '#56918c',

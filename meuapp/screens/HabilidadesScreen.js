@@ -6,29 +6,28 @@ import {
     FlatList,
     Dimensions,
     TouchableOpacity,
-    Linking
 } from 'react-native';
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 const dadosHabilidades = [
     {
         id: '1',
-        icon: 'react',
+        icon: 'logo-react',
         texto: 'Minha experiência com React vai além de simplesmente criar componentes. Eu foco na arquitetura da aplicação e na eficiência do código.',
     },
     {
         id: '2',
-        icon: 'git-alt',
+        icon: 'git-branch',
         texto: 'Meu conhecimento em Git vai além do básico do dia a dia. Estou confortável utilizando recursos avançados quando o projeto exige organização e correções cirúrgicas.',
     },
     {
         id: '3',
-        icon: 'html5',
+        icon: 'logo-html5',
         texto: 'Domino o HTML para a estruturação dos meus sistemas e potencializo com o dinamismo do JavaScript.',
     },
     {
         id: '4',
-        icon: 'css3-alt',
+        icon: 'logo-css3',
         texto: 'O CSS moderno é uma ferramenta extremamente poderosa, e eu o utilizo para criar interfaces responsivas, rápidas e visualmente incríveis.',
     },
     {
@@ -38,34 +37,43 @@ const dadosHabilidades = [
     },
 ];
 
+const data = [
+    { id: '1', title: 'Postman' },
+    { id: '2', title: 'Figma' },
+    { id: '3', title: 'Github' },
+    { id: '4', title: 'PostgreSQL' },
+    { id: '5', title: 'Nodemon' },
+    { id: '6', title: 'Node.js' },
+    { id: '7', title: 'Supabase' },
+    { id: '8', title: 'Render' },
+    { id: '9', title: 'Prisma' },
+    { id: '10', title: 'JavaScript' },
+    { id: '11', title: 'Cors' },
+];
+
 const { width } = Dimensions.get('window');
 
 export default function HabilidadesScreen() {
-    const abrirGithub = async () => {
-        const url = 'https://github.com/NathaliaNascimentoReis';
-        const suportado = await Linking.canOpenURL(url);
-
-        if (suportado) {
-            await Linking.openURL(url);
-        } else {
-            console.log(`Não foi possível abrir o link: ${url}`);
-        }
-    };
-
     const renderCard = ({ item }) => (
         <View style={styles.card}>
             <View style={styles.icon}>
-                <FontAwesome5 name={item.icon} size={30} color="#2f5a56ff" />
+                <Ionicons name={item.icon} size={30} color="#386d68" />
             </View>
             <Text style={styles.infoTexto}>{item.texto}</Text>
+        </View>
+    );
+
+    const renderItem = ({ item }) => (
+        <View style={styles.lista}>
+            <Text style={styles.ponto}>•</Text>
+            <Text style={styles.infoTexto}>{item.title}</Text>
         </View>
     );
 
     return (
         <ScrollView style={styles.background} contentContainerStyle={styles.container}>
             <View style={styles.tituloDiv}>
-                <FontAwesome5 name="brain" size={24} color="#386d68" />
-
+                <Ionicons name="star" size={24} color="#386d68" />
                 <Text style={styles.titulo}>Minhas Habilidades</Text>
             </View>
 
@@ -82,16 +90,24 @@ export default function HabilidadesScreen() {
                 />
             </View>
 
-            <TouchableOpacity onPress={abrirGithub} activeOpacity={0.7}>
-                <View style={styles.cardGithub}>
-                    <FontAwesome5 name="github" size={50} color="#386d68" />
-                    <View style={styles.infos}>
-                        <View style={styles.camposInfo}>
-                            <Text style={styles.boldText}>Veja mais no meu perfil do github!</Text>
+            <View style={styles.outrosCampo}>
+                <Ionicons name="star" size={20} color="#386d68" />
+                <Text style={styles.texto}>
+                    Outras tecnologias, linguagens e ferramentas que utilizo!
+                </Text>
+                <Ionicons name="star" size={20} color="#386d68" />
+            </View>
+
+            <View style={styles.maisHabilidades}>
+                <ScrollView nestedScrollEnabled={true} showsVerticalScrollIndicator={false}>
+                    {data.map((item) => (
+                        <View key={item.id} style={styles.listaDois}>
+                            <Text style={styles.ponto}>•</Text>
+                            <Text style={styles.textoItem}>{item.title}</Text>
                         </View>
-                    </View>
-                </View>
-            </TouchableOpacity>
+                    ))}
+                </ScrollView>
+            </View>
         </ScrollView>
     );
 }
@@ -99,7 +115,7 @@ export default function HabilidadesScreen() {
 const styles = StyleSheet.create({
     background: {
         flex: 1,
-        backgroundColor: '#eff9f8ff',
+        backgroundColor: '#eff9f8',
     },
     container: {
         alignItems: 'center',
@@ -115,7 +131,7 @@ const styles = StyleSheet.create({
         width: '100%',
     },
     titulo: {
-        fontSize: 24,
+        fontSize: 20,
         fontWeight: 'bold',
         color: '#386d68',
         alignSelf: 'center',
@@ -136,15 +152,15 @@ const styles = StyleSheet.create({
         gap: 15,
     },
     card: {
-        width: width * 0.75,
-        height: 220,
+        width: width * 0.85,
+        height: 250,
         marginTop: 20,
-        backgroundColor: '#c5e6e3ff',
+        backgroundColor: '#c5e6e3',
         justifyContent: 'center',
         gap: 10,
         borderRadius: 12,
         padding: 12,
-        borderColor: '#91bebbff',
+        borderColor: '#91bebb',
         borderWidth: 2,
         marginRight: 15,
         alignItems: 'center',
@@ -166,12 +182,12 @@ const styles = StyleSheet.create({
         width: width * 0.75,
         height: 140,
         marginTop: 20,
-        backgroundColor: '#c5e6e3ff',
+        backgroundColor: '#c5e6e3',
         justifyContent: 'center',
         gap: 10,
         borderRadius: 12,
         padding: 12,
-        borderColor: '#91bebbff',
+        borderColor: '#91bebb',
         borderWidth: 2,
         marginRight: 15,
         alignItems: 'center',
@@ -187,9 +203,54 @@ const styles = StyleSheet.create({
     boldText: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#284e4aff',
+        color: '#284e4a',
         lineHeight: 20,
         marginRight: 5,
         textAlign: 'center',
+    },
+    outrosCampo: {
+        width: width * 0.85,
+        flexDirection: 'row',
+        gap: 3,
+        marginTop: 30,
+        marginBottom: 10,
+        alignItems: 'center',
+    },
+    texto: {
+        color: '#386d68',
+        fontSize: 18,
+        fontWeight: '500',
+        lineHeight: 20,
+        textAlign: 'center',
+        flex: 1,
+    },
+    maisHabilidades: {
+        width: width * 0.85,
+        height: 180,
+        marginTop: 20,
+        backgroundColor: '#c5e6e3',
+        justifyContent: 'center',
+        gap: 10,
+        borderRadius: 12,
+        padding: 20,
+        borderColor: '#91bebb',
+        borderWidth: 2,
+        marginRight: 15,
+        alignSelf: 'center',
+    },
+    listaDois: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
+    ponto: {
+        fontSize: 20,
+        marginRight: 10,
+        color: '#386d68',
+    },
+    textoItem: {
+        color: '#386d68',
+        fontSize: 18,
+        fontWeight: '500',
     },
 });

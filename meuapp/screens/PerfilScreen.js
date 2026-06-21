@@ -1,11 +1,17 @@
-import { ScrollView, View, Text, Image, StyleSheet } from 'react-native';
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import {
+    ScrollView,
+    View,
+    Text,
+    Image,
+    StyleSheet,
+} from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function PerfilScreen() {
     return (
         <ScrollView style={styles.background} contentContainerStyle={styles.container}>
             <View style={styles.tituloDiv}>
-                <FontAwesome5 name="id-card-alt" size={24} color="#386d68" />
+                <Ionicons name="person" size={24} color="#386d68" />
                 <Text style={styles.titulo}>Bem-vindo ao meu perfil!</Text>
             </View>
 
@@ -36,8 +42,17 @@ export default function PerfilScreen() {
             <View style={styles.cardSobre}>
                 <Text style={styles.tituloCard}>Sobre Mim</Text>
                 <View style={styles.textos}>
-                    <Text style={styles.infoTexto}>Sou aluna do curso Técnico em Desenvolvimento de Sistemas do SENAI e sou uma desenvolvedora FullStack apaixonada por desenvolvimento organizado, planejado e cuidadoso com o desejo dos meus clientes. Perterço à turma 2TDS2 e estou no processo de conclusão do técnico, em conjunto com o Ensino Médio pelo SESI, neste ano de 2026.</Text>
-                    <Text style={styles.infoTexto}>Estudo a área de tecnologia há alguns anos e me especializo em criar soluções inovadoras e eficientes.</Text>
+                    <Text style={styles.infoTexto}>
+                        Sou aluna do curso Técnico em Desenvolvimento de Sistemas do SENAI e sou uma
+                        desenvolvedora FullStack apaixonada por desenvolvimento organizado,
+                        planejado e cuidadoso com o desejo dos meus clientes. Perterço à turma 2TDS2
+                        e estou no processo de conclusão do técnico, em conjunto com o Ensino Médio
+                        pelo SESI, neste ano de 2026.
+                    </Text>
+                    <Text style={styles.infoTexto}>
+                        Estudo a área de tecnologia há alguns anos e me especializo em criar
+                        soluções inovadoras e eficientes.
+                    </Text>
                 </View>
             </View>
         </ScrollView>
@@ -47,7 +62,7 @@ export default function PerfilScreen() {
 const styles = StyleSheet.create({
     background: {
         flex: 1,
-        backgroundColor: '#eff9f8ff',
+        backgroundColor: '#eff9f8',
     },
     container: {
         alignItems: 'center',
@@ -63,7 +78,7 @@ const styles = StyleSheet.create({
         width: '100%',
     },
     titulo: {
-        fontSize: 24,
+        fontSize: 20,
         fontWeight: 'bold',
         color: '#386d68',
         alignSelf: 'center',
@@ -76,19 +91,19 @@ const styles = StyleSheet.create({
     },
     card: {
         marginTop: 20,
-        backgroundColor: '#c5e6e3ff',
+        backgroundColor: '#c5e6e3',
         flexDirection: 'row',
         justifyContent: 'center',
         gap: 10,
         borderRadius: 12,
         padding: 12,
-        borderColor: '#91bebbff',
+        borderColor: '#91bebb',
         borderWidth: 2,
     },
     foto: {
-        width: 130,
-        height: 130,
-        borderRadius: '100%',
+        width: 100,
+        height: 100,
+        borderRadius: 65,
         alignSelf: 'center',
     },
     infos: {
@@ -101,36 +116,35 @@ const styles = StyleSheet.create({
     },
     infoTexto: {
         color: '#386d68',
-        fontSize: 18,
+        fontSize: 16,
         fontWeight: '500',
         lineHeight: 20,
         marginBottom: 5,
     },
     boldText: {
-        fontSize: 18,
+        fontSize: 16,
         fontWeight: 'bold',
-        color: '#284e4aff',
+        color: '#284e4a',
         lineHeight: 20,
         marginRight: 5,
     },
     cardSobre: {
+        width: '100%',
         marginTop: 20,
-        backgroundColor: '#c5e6e3ff',
-        justifyContent: 'center',
+        backgroundColor: '#c5e6e3',
         gap: 10,
         borderRadius: 12,
-        padding: 12,
-        borderColor: '#91bebbff',
+        padding: 16,
+        borderColor: '#91bebb',
         borderWidth: 2,
     },
     tituloCard: {
-        fontSize: 20,
+        fontSize: 18,
         fontWeight: 'bold',
-        color: '#284e4aff',
+        color: '#284e4a',
         marginRight: 5,
     },
     textos: {
         gap: 20,
-        flex: 1,
     },
 });
